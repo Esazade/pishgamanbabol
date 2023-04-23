@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../font/Vazir.eot') format('eot');
+    src: url('../font/Vazir.ttf') format('truetype');
+    src: url('../font/Vazir.woff') format('woff');
+    src: url('../font/Vazir.woff2') format('woff2');
+}
+
+body{
+    direction: rtl;
+    font-family: 'vazir';
+}
+
+* {
+  /* -ms-overflow-style: none;
+  scrollbar-width: none; */
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.dayspeech{
+  background-image: url('../image/speech-bg.png');
+  height: 300px;
+}
+
+.funder{
+  background-image: url('../image/funder-bg.jpg');
+}
+
+.footer-title {
+  color: #c5a444; 
+  border-bottom: 1px #aa7131 solid; 
+  padding-bottom: 15px; 
+  margin-bottom: 15px;
+}
+
+/* ****************************************************************************************** */
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  max-width: 100%;
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+.caption-container{
+  text-align: center;
+  margin: auto;
+  display: block;
+  margin-top: 1%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Container for image text */
+.caption-container {
+  /* text-align: center;
+  background-color: #222; */
+  padding: 2px 16px;
+  /* color: white; */
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* ************************************************************************************************** */
+.card {
+  display: inline-block;
+  width: 100%;
+  margin: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 0.25rem 1rem;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.2);
+}
